@@ -1,0 +1,226 @@
+<html>
+<head>
+    <title>Sign Up by Ness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background: #cfcb655f;
+            margin: 2rem 4rem;
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 24px;
+            color: rgb(2, 2, 63);
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            border: none;
+            border-radius: 30px;
+            border-collapse: separate;
+            padding: 2rem;
+            margin: 1rem;
+        }
+        .table1 {
+            float: left;
+            width: 50%;
+            background-color: #fff;
+        }
+        .table2{
+            float: right;
+            background-color: #fff;
+            width: 35%;
+        }
+        .table3 {
+            border: none;
+            float: right;
+            padding: 15px;
+            width: 35%;
+        }
+        td {
+            padding: 8px 0px;
+        }
+        input {
+            width: 100%;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(222, 216, 216);
+            padding: 10px;
+            transition: .3s;
+        }
+        input:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+
+        }
+        .checkbox {
+            width: auto;
+        }
+        .btn {
+            border: none;
+            padding: 10px 50px;
+            border-radius: 40px;
+            color: white;
+            font-weight: bold;
+            width: auto;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+        .btn.submit{
+            background-color: green;
+            margin-right: 18px;
+        }
+        .btn.cancel{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+ <form action="index.html">
+    <h2>Sensus Penduduk Komplek Gemilang</h2>
+    <table class="table1">
+        <!-- NAMA TEXT FIELD-->
+        <tr>
+            <td>Nama Depan</td>
+            <td>:</td>
+            <td><input type="text" required></td>
+        </tr>
+        <tr>
+            <td>Nama Belakang</td>
+            <td>:</td>
+            <td><input type="text" required></td>
+        </tr>
+
+        <!-- EMAIL -->
+        <tr>
+            <td>E-mail</td>
+            <td>:</td>
+            <td><input type="email" placeholder="masukkan email aktif" required></td>
+        </tr>
+
+        <!-- TTL DATE-->
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td><input type="Date" required></td>
+        </tr>
+        
+        <!-- GENDER RADIO BUTTON -->
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+                <input class="checkbox" type="radio" name="gender" value="pria">Laki-laki
+                <input class="checkbox" type="radio" name="gender" value="wanita">Perempuan
+            </td>
+        </tr>
+
+        <!-- ALAMAT TEXTAREA -->
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><textarea required name="alamat" id="" cols="30" rows="4" placeholder="masukkan alamat lengkap"></textarea></td>
+        </tr>
+
+        <!-- PENDIDIKAN COMBO BOX -->
+        <tr>
+            <td>Pendidikan Terakhir</td>
+            <td>:</td>
+            <td>
+                <select name="pendidikan" id="dropdown" required>
+                    <option value="">Pilih Pendidikan</option>
+                    <option value="SD">Sekolah Dasar</option>
+                    <option value="SMP">Sekolah Menengah Pertama</option>
+                    <option value="SMA">Sekolah Menengah Atas</option>
+                    <option value="S1">Sarjana</option>
+                    <option value="S2">Magister</option>
+                    <option value="other">Lainnya</option>
+                </select>
+            </td>
+        </tr>
+
+        <!-- CHECKBOX -->
+        <tr>
+            <td>Apakah anda seorang?</td>
+            <td>:</td>
+            <td>
+                <input class="checkbox" type="checkbox" value="siswa">Pelajar/Mahasiswa
+            </td>
+           
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <input class="checkbox" type="checkbox" value="pekerja">Pekerja Penuh Waktu
+
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <input class="checkbox" type="checkbox" value="freelancer">Freelancer
+
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <input class="checkbox" type="checkbox" value="nganggur">Pengangguran
+
+            </td>
+        </tr>
+        
+    </table>
+
+    <table class="table2">
+        <!-- USERNAME -->
+        <tr>
+            <td>Username</td>
+            <td>:</td>
+            <td><input type="text" name="username" required>
+            </td>
+        </tr>
+
+        <!-- PASSWORD  -->
+        <tr>
+            <td>Password</td>
+            <td>:</td>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        <!-- FOTO PROFILE FILE -->
+        <tr>
+            <td>Pilih Foto Profil</td>
+            <td>:</td>
+            <td><input type="file" name="fotoProfil" required></td>
+        </tr>
+
+       
+    </table>
+
+    <table class="table3">
+         <!-- BUTTON SUBMIT dan CANCEL -->
+         <tr>
+            <td></td>
+            <td></td>
+            <td>
+                    <input class="btn submit" type="submit" value="SUBMIT">
+                    <input class="btn cancel" type="reset" value="BATAL">
+            </td>
+        </tr>
+    </table>
+ </form>
+
+
+</body>
+</html>
+
+<!-- Buatlah halaman registrasi suatu website.
+- Data yang harus dimasukkan pengguna, minimal : Nama depan, nama  belakang, alamat, tanggal lahir, jenis kelamin, username, password,  browse foto.
+- Kolom dan baris isian dibuat rapi menggunakan tabel atau div.
+- Dikumpulkan Selasa
+Email : arufai936@gmail.com
+Subject : TUGAS_1
+Nama file : TUGAS_1_Nama.html
+ -->
+
